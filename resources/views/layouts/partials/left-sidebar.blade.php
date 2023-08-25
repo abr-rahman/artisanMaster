@@ -30,6 +30,17 @@
                         @endcan
                     </ul>
                 </li>
+
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle">
+                        <span class="micon bi bi-textarea-resize"></span><span class="mtext">Role Permission</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="{{ route('role-permissions.index') }}">Create Permission</a></li>
+                        <li><a href="{{ route('role.index') }}">Create Role</a></li>
+                        <li><a href="{{ route('role.has_permission') }}">Role Has Permission</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>

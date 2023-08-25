@@ -11,9 +11,10 @@ class PostPolicy
     /**
      * Determine whether the user can view any models.
      */
-    public function viewAny(User $user): bool
+    public function viewAny(User $user)
     {
-        return true;
+        $user->role == 'admin';
+        // return true;
     }
 
     /**
@@ -21,8 +22,7 @@ class PostPolicy
      */
     public function view(User $user, Post $post)
     {
-        // $user->id == $post->user_id;
-        $user->role == 'admin';
+        $user->id == $post->user_id || $user->role == 'admin';
     }
 
     /**

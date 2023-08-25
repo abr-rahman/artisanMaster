@@ -16,9 +16,10 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        if (User::count() === 0) {
-            $this->call(UserSeeder::class);
-        }
+        // if (User::count() === 0) {
+        //     $this->call(UserSeeder::class);
+        // }
+        $this->call(UserSeeder::class);
         $this->call(PostSeeder::class);
     }
 }

@@ -17,7 +17,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $this->authorize('viewAny', Post::class);
+        // $this->authorize('viewAny', Post::class);
 
         $posts = Post::with('user')->get();
         return view('post.index', compact('posts'));
@@ -86,7 +86,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        // $this->authorize('view', $post);
+        $this->authorize('view', $post);
         return view('post.edit', compact('post'));
     }
 

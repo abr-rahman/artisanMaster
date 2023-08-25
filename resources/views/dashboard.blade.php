@@ -11,7 +11,7 @@
 <div class="min-height-200px">
     <div class="card-box mb-30">
         <div class="pd-20">
-            <h4 class="text-blue h4">Data Table Simple</h4>
+            <h4 class="text-blue h4">Data Table Simple @role('author') Editor @endrole</h4>
         </div>
         <div class="pb-20">
             <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
